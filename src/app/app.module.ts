@@ -3,13 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello.component';
-import { HighlightDirective } from './highlight.directive';
 import { HttpClientModule } from '@angular/common/http';
 import { tablePipe } from './table-search';
 @NgModule({
   imports: [BrowserModule, FormsModule, HttpClientModule],
-  declarations: [AppComponent, HelloComponent, HighlightDirective, tablePipe],
+  declarations: [AppComponent,tablePipe],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
